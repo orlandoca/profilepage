@@ -24,13 +24,16 @@
 
 .nav {
   background-color: black;
-  display: inline-flex;
-  justify-content: space-evenly;
   padding: 10px;
   width: 100%;
-  margin: auto;
   height: 70px;
-  align-items: center;
+}
+.nav > div{
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
 }
 .nav-title {
   color: white;
@@ -105,9 +108,6 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  border-color: blue;
-  border-width: 1px;
-  border-style: solid;
   margin-top: 30px;
   margin-right: auto;
   margin-bottom: auto;
@@ -129,7 +129,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid gray;
+  gap: 20px;
 }
 
 .column2 {
@@ -137,10 +137,9 @@ h1 {
 }
 
 .containt-paint {
-  background-color: darkcyan;
-  height: 60px;
-  width: 500px;
+  width: 100%;
   align-content: center;
+  border: 1px solid gray;
 }
 
 .containt-edit {
@@ -153,13 +152,12 @@ h1 {
 }
 
 .cards2 {
-  height: 60px;
   width: 100%;
-  align-content: center;
   display: flex;
+  align-content: center;
   flex-direction: column;
   justify-content: flex-end;
-  border: 1px solid black;
+  border: 1px solid gray;
 }
 
 .education {
@@ -178,17 +176,29 @@ h1 {
   margin: 5px 15px;
 }
 
-.cards3 {
+.cards3{
   display: flex;
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid gray;
   align-items: flex-start;
   justify-content: space-between;
   flex-direction: column;
-  border: 3px solid black;
+  margin-bottom: 15px;
+}
+
+.card3-bg {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
   padding: 10px;
   background: gray;
   margin-bottom: 15px;
+}
+
+.text-cards3{
+  width: 100%;
 }
 
 .icon {
@@ -228,10 +238,23 @@ h1 {
 
 .row {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
 }
 
 .row2 {
   display: flex;
   justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+}
+
+.view-button{
+  width: 100%;
+  display: block;
+  padding: 20px 10px;
+  border-top: 1px solid gray;
 }
